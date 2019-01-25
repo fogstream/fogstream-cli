@@ -1,10 +1,23 @@
-# fogstream-cli
+FOGSTREAM CLI
+======================
 
-## Instalation
+INSTALLATION
+--------
 
-### From sources
-Download fogstream-cli `zip` and run the following command
+Command line interface for easy work on projects of the company FOGSTREAM
 
-```bash
-pip install <path to zip>
+In force of using a python3 there is strongly recommended install cli in global environment 
+only via pip3.
+Or use pip if your environment based on python3.
+
+COMMANDS
+--------
+### Initiate project
+```commandline
+Usage: fogstream-cli initproject [OPTIONS] PROJECT_NAME GIT_URL
+
+Options:
+  -d        Path to project directory
+  --help    Show this message and exit.
+
 ```
