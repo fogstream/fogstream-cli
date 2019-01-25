@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="fogstream-cli",
-    version="0.0.1",
+    version="1.0",
     author="Dmitry Kotov",
     author_email="dmitrii.kotov@fogstream.com",
     description="Fogstream CLI",
