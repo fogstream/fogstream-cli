@@ -24,7 +24,7 @@ class InitprojectCommand(BaseCommand):
         self.project_key_name = project_key_name or self.PROJECT_KEY_NAME
         self.project_name = project_name
         self.git_url = git_url
-        self.dist_dir = dist_dir
+        self.dist_dir = dist_dir or os.path.join(os.getcwd(), project_name)
 
     def generate_by_template(self, template_dir):
         if not os.path.exists(self.dist_dir):
