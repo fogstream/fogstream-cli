@@ -11,7 +11,7 @@ def cli():
 @cli.command()
 @click.argument('project_name')
 @click.argument('git-url')
-@click.option('-d', default='.', help='path to project directory')
+@click.option('-d', default=None, help='path to project directory')
 def initproject(git_url, project_name, d):
     InitprojectCommand(
         git_url=git_url,
