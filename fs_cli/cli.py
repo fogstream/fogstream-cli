@@ -1,6 +1,6 @@
 import click
 
-from fogstream_cli.commands import InitprojectCommand
+from fs_cli.commands import InitprojectCommand
 
 
 @click.group()
