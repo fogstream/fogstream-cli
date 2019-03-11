@@ -48,7 +48,9 @@ class InitprojectCommand(BaseCommand):
                 new_path = os.path.join(self.dist_dir, relative_dir,
                                         filename.replace(self.project_key_name, self.project_name))
                 if os.path.exists(new_path):
-                    raise Exception
+                    raise OSError(
+                        'File exists: {}'.format(os.path.normpath(new_path))
+                    )
                 with open(old_path, 'r', encoding='utf-8') as template_file:
                     content = template_file.read()
                 template = Template(content)

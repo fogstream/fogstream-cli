@@ -14,10 +14,12 @@ COMMANDS
 --------
 ### Initiate project
 ```commandline
-Usage: fogstream-cli initproject [OPTIONS] PROJECT_NAME GIT_URL
+Usage: fogstream-cli initproject PROJECT_CODE PROJECT_NAME [OPTIONS]
 
 Options:
-  -d        Path to project directory
-  --help    Show this message and exit.
+  --ssd, -s         Connect to git via SSH
+  --directory, -d   Project directory path
+  --repo, -r        Template repository
+  --help            Show this message and exit.
 
 ```
