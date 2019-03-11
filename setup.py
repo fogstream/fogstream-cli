@@ -6,7 +6,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="fogstream-cli",
+    name="fs-cli",
     version="0.0.1",
     author="Dmitry Kotov",
     author_email="dmitrii.kotov@fogstream.com",
@@ -14,9 +14,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(),
-    url='https://github.com/fogstream/fogstream-cli',
+    url='https://github.com/fogstream/fs-cli',
     entry_points={
-        'console_scripts': ['fogstream-cli=fogstream_cli.cli:main'],
+        'console_scripts': ['fs-cli=fs_cli.cli:main'],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
